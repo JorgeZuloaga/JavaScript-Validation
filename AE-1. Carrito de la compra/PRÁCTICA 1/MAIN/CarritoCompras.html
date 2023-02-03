@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carrito de la compra</title>
+	<link rel="stylesheet" href="Carrito.css">
+	<script src="CarritoCompras.js"> </script>
+
+</head>
+<body>
+
+ <div class="carrito">
+        <form name="form_list" action="" method="get">
+            <ul>
+                <li>
+                  <label for="nombre" >Nombre del Artículo:</label>
+                  <input type="text" id="nombreArt" /> <span id="mensajeError1" style="font-size: medium";></span>
+                </li>
+                <li>
+                    <label for="precio">Precio del Artículo:</label>
+                    <input type="text" id="precioArt" /> <span id="mensajeError2" style="font-size: medium";></span>
+                </li>
+                <li>
+                    <label for="unidades">Unidades:</label>
+                    <input type="number" id="unidades" min="1" value="1"/>
+                </li>
+                <br>
+               <li>
+               	<input type="button" id="botonAnadir" value="Añadir al carrito">
+               </li>
+
+               	<br>
+                           
+                
+                <li>
+                    <label for="carrito">Artículos en el carrito:</label>
+                    <input id="listCarr" readonly>
+                </li>
+                <li>
+                    <label for="preciototal">Precio total del carrito:</label>
+                    <input type="text" id="preciototal" readonly>
+                </li>
+                <li>
+                    <label for="textFormaPago" >Forma de pago:</label>
+                    <select id="formaPago" >
+                        <option value="seleccione" >--Seleccione--</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </li>
+                <br>
+                
+                <div id="capaTarjeta">
+                    Titular Tarjeta: <input type="text" id="titular"/> <span id="mensajeError3" style="font-size: medium";> </span> <br/>
+                    Numero Tarjeta: <input type="text" id="numTarjeta"/> <span id="mensajeError4" style="font-size: medium";> </span><br/>
+                    CVV: <input type="text" id="cvv"/><span id="mensajeError5" style="font-size: medium";> </span><br/>  
+                </div>
+
+                <div id="capaEfectivo">
+                    Importe efectivo: <input type="text" id="importe" readonly /><br/>
+                </div>
+                <br>
+
+                <li>
+                    <input class="recuadro" type="checkbox" id="botonCheck">
+                    <label class="acepto" for="condiciones">Acepto las condiciones de compra
+                    </label>
+                </li>
+                <li>
+                    <input type="button" id="botonImprimir" value="Imprimir" disabled="">
+                    <input type="button" id="botonRestablecer" value="Restablecer" >
+                </li>
+
+            </ul>
+           
+
+        </form>
+    </div>
+
+
+</body>
+</html>

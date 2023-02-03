@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(19,25,33);
+    text-align: center;
+    background-image: url(../img/903178.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+
+.carrito{
+    line-height: 2.5rem;
+    margin: auto;
+    margin-top: 10rem;
+    padding: auto;
+    background-color: #d0baa2fa;
+    display: flex;
+    padding: 0.4rem;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 38vw;
+    font-size: x-large;
+    
+}
+
+
+
+
+ul{
+    list-style: none;
+    position: relative;
+    
+}
+label{
+    display: inline-block;
+    width: 15rem;
+}
+input[type=button]{
+    border-style: none;
+    background-color: rgba(172, 139, 139, 0.863);
+    font-size: medium;
+    padding: 0.7rem;
+    border-radius: 0.45rem;
+    transition: 0.5s;
+}
+
+input[type=text]{
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: rgba(172, 139, 139, 0.897);
+    padding: 0.28rem;
+}
+input[type=number]{
+
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: rgba(172, 139, 139, 0.836);
+    padding: 0.28rem;
+   
+}
+#listCarr{
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: rgba(172, 139, 139, 0.877);
+    padding: 0.28rem;
+}
+
+input[type=button]:hover{
+
+    transform: scale(1.15);
+    
+
+
+}
+
+
+.acepto{
+    font-size: medium;
+    margin-bottom: 2rem;
+}
+
